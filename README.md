@@ -5,7 +5,7 @@ Group Members and Roles.
 - App Analyst: Puoch Mabor Makuei - Led feature identification and overview.
 - Systems Thinker: Absolom Orianga - Focused on backend and architecture reasoning.
 - Risk & Change Analyst: Sebata Allan Kagimu - Focused on maintainability and challenges.
-- Documentation Lead: Mubiru Humphrey - Ensured clarity and structure in README.
+- Documentation Lead: Mubiru Humphery - Ensured clarity and structure in README.
 
 All members contributed jointly to discussions, research, and writing.
 

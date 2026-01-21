@@ -86,4 +86,10 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes for real-time.
 - If Network Slow/Unavailable: Delays delivery; shows pending notifications when back online.
 
+  Part C: Change and Maintainability
+
+Chosen Change Scenario: Add Mobile Payments in Uganda
+This involves integrating local mobile money systems (e.g., MTN MoMo, Airtel Money) for in-app purchases, shopping, or tipping creators.
+
+
 

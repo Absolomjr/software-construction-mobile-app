@@ -97,7 +97,7 @@ UI: Add payment buttons in shopping/stories/reels. Business Logic: Integrate wit
 - What existing features could break?
 Shopping tags or checkout flows might conflict with new payment gateways. Notifications could overload if transaction alerts are added. Feed algorithms might need adjustment for payment-related content.
 
-
-
+- Why would this change be difficult to implement?
+Regulatory compliance with Uganda's payment laws and taxes (e.g., mobile money tariffs). High fraud risks require enhanced security. Integration with fragmented mobile money providers; poor network in rural areas could cause failures. User education on fees and safety; testing across devices in Uganda's market
 
 

@@ -98,6 +98,16 @@ UI: Add payment buttons in shopping/stories/reels. Business Logic: Integrate wit
 Shopping tags or checkout flows might conflict with new payment gateways. Notifications could overload if transaction alerts are added. Feed algorithms might need adjustment for payment-related content.
 
 - Why would this change be difficult to implement?
-Regulatory compliance with Uganda's payment laws and taxes (e.g., mobile money tariffs). High fraud risks require enhanced security. Integration with fragmented mobile money providers; poor network in rural areas could cause failures. User education on fees and safety; testing across devices in Uganda's market
+Regulatory compliance with Uganda's payment laws and taxes (e.g., mobile money tariffs). High fraud risks require enhanced security. Integration with fragmented mobile money providers; poor network in rural areas could cause failures. User education on fees and safety; testing across devices in Uganda's market.
+
+Part D: Software Construction Challenges
+
+Here are 5 engineering challenges in maintaining or improving Instagram, with brief explanations:
+
+- Performance and Scalability: Handling billions of users requires efficient load balancing and sharding; spikes in traffic (e.g., viral reels) can overload servers.
+- Security and Data Privacy: Protecting against hacks, leaks, and complying with global regs like GDPR; features like DMs need end-to-end encryption.
+- Testing Across Devices and OS Versions: Android/iOS fragmentation means extensive testing; memory leaks on low-end devices can crash the app.
+- Backward Compatibility: Updates must support old app versions; changing APIs can break third-party integrations.
+- Reliability Under Poor Network Conditions: In areas like Uganda, apps must handle intermittent connectivity with caching and offline modes.
 
 

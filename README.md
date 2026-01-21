@@ -91,5 +91,13 @@ For each feature, we discuss the likely software components involved (UI, Busine
 Chosen Change Scenario: Add Mobile Payments in Uganda
 This involves integrating local mobile money systems (e.g., MTN MoMo, Airtel Money) for in-app purchases, shopping, or tipping creators.
 
+- Which parts of the app would need changes?
+UI: Add payment buttons in shopping/stories/reels. Business Logic: Integrate with Ugandan payment APIs. Network/APIs: New endpoints for transactions. Data Storage: Secure storage for payment details.
+
+- What existing features could break?
+Shopping tags or checkout flows might conflict with new payment gateways. Notifications could overload if transaction alerts are added. Feed algorithms might need adjustment for payment-related content.
+
+
+
 
 

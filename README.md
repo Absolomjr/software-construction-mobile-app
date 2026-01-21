@@ -40,4 +40,50 @@ For each feature, we discuss the likely software components involved (UI, Busine
   - Data Storage: Caches recent feeds locally; uses databases for user follows and content metadata.
 - Requires Internet? Yes, for fresh content; cached for offline.
 - If Network Slow/Unavailable: Loads cached posts; may show stale content or "No internet" banner; refreshes fail.
+  
+ Posting Content
+- Software Components: 
+  - UI: Camera/upload interface with editing tools.
+  - Business Logic: Image processing, caption parsing.
+  - Network/APIs: Uploads to media services via APIs.
+  - Data Storage: Media stored in cloud (e.g., S3), metadata in DBs.
+- Requires Internet? Yes, for uploading.
+- If Network Slow/Unavailable: Queues upload for later; shows progress bar or error; local drafts possible.
+
+   Stories
+- Software Components: 
+  - UI: Circular icons at top, swipeable views.
+  - Business Logic: Expiration logic (24 hours).
+  - Network/APIs: Fetches and uploads via dedicated services.
+  - Data Storage: Temporary storage with TTL (time-to-live).
+- Requires Internet? Yes.
+- If Network Slow/Unavailable: Views cached stories; new ones can't be added or viewed live.
+
+ Reels
+- Software Components: 
+  - UI: Video editor and player.
+  - Business Logic: Recommendation algorithms using ML.
+  - Network/APIs: Video processing and distribution.
+  - Data Storage: Videos in distributed storage.
+- Requires Internet? Yes.
+- If Network Slow/Unavailable: Plays downloaded reels; creation limited to local editing.
+
+ Direct Messaging (DMs)
+- Software Components: 
+  - UI: Chat interface.
+  - Business Logic: Message encryption and delivery.
+  - Network/APIs: Real-time APIs (e.g., WebSockets).
+  - Data Storage: Messages in databases.
+- Requires Internet? Yes.
+- If Network Slow/Unavailable: Shows offline status; unsent messages queued.
+
+ Notifications
+- Software Components: 
+  - UI: Bell icon with list.
+  - Business Logic: Event triggering (likes, etc.).
+  - Network/APIs: Push notifications via services like FCM.
+  - Data Storage: Notification logs in DBs.
+- Requires Internet? Yes for real-time.
+- If Network Slow/Unavailable: Delays delivery; shows pending notifications when back online.
+
 

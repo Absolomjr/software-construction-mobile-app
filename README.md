@@ -1,6 +1,6 @@
 # software-construction-mobile-app: Instagram
 
-Group Members and Roles
+Group Members and Roles.
 
 Part A: Understanding the App
 

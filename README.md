@@ -58,7 +58,7 @@ The following features define Instagram's core functionality:
 
 For each feature, we discuss the likely software components involved (UI, Business Logic, Network/APIs, Data Storage), whether it requires internet connectivity, and what might happen if the network is slow or unavailable. Our reasoning is based on logical analysis of Instagram's architecture, which uses microservices, React Native for the frontend, Django/Python for backend, and databases like PostgreSQL and Cassandra.
 
- Login/Authentication
+ **Login/Authentication**
 - Software Components: 
   - UI: Login screen with input fields and buttons.
   - Business Logic: Validation of credentials and session management.
@@ -67,7 +67,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes, to verify credentials with servers.
 - If Network Slow/Unavailable: App may show cached last login or offline mode, but new logins fail; could display error messages or allow limited guest access.
 
- Feed Browsing
+ **Feed Browsing**
 - Software Components: 
   - UI: Scrollable list with images/videos.
   - Business Logic: Algorithm for personalizing feed based on user interactions.
@@ -76,7 +76,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes, for fresh content; cached for offline.
 - If Network Slow/Unavailable: Loads cached posts; may show stale content or "No internet" banner; refreshes fail.
   
- Posting Content
+ **Posting Content**
 - Software Components: 
   - UI: Camera/upload interface with editing tools.
   - Business Logic: Image processing, caption parsing.
@@ -85,7 +85,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes, for uploading.
 - If Network Slow/Unavailable: Queues upload for later; shows progress bar or error; local drafts possible.
 
-   Stories
+   **Stories**
 - Software Components: 
   - UI: Circular icons at top, swipeable views.
   - Business Logic: Expiration logic (24 hours).
@@ -94,7 +94,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes.
 - If Network Slow/Unavailable: Views cached stories; new ones can't be added or viewed live.
 
- Reels
+ **Reels**
 - Software Components: 
   - UI: Video editor and player.
   - Business Logic: Recommendation algorithms using ML.
@@ -103,7 +103,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes.
 - If Network Slow/Unavailable: Plays downloaded reels; creation limited to local editing.
 
- Direct Messaging (DMs)
+ **Direct Messaging (DMs)**
 - Software Components: 
   - UI: Chat interface.
   - Business Logic: Message encryption and delivery.
@@ -112,7 +112,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes.
 - If Network Slow/Unavailable: Shows offline status; unsent messages queued.
 
- Notifications
+ **Notifications**
 - Software Components: 
   - UI: Bell icon with list.
   - Business Logic: Event triggering (likes, etc.).

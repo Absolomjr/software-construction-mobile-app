@@ -54,11 +54,11 @@ The following features define Instagram's core functionality:
   Notifications inform users about likes, comments, follows, mentions, and messages, creating a feedback loop that drives continued engagement.
 
 
-Part B: Thinking Behind the Scenes
+## Part B: Thinking Behind the Scenes
 
 For each feature, we discuss the likely software components involved (UI, Business Logic, Network/APIs, Data Storage), whether it requires internet connectivity, and what might happen if the network is slow or unavailable. Our reasoning is based on logical analysis of Instagram's architecture, which uses microservices, React Native for the frontend, Django/Python for backend, and databases like PostgreSQL and Cassandra.
 
- Login/Authentication
+ **Login/Authentication**
 - Software Components: 
   - UI: Login screen with input fields and buttons.
   - Business Logic: Validation of credentials and session management.
@@ -67,7 +67,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes, to verify credentials with servers.
 - If Network Slow/Unavailable: App may show cached last login or offline mode, but new logins fail; could display error messages or allow limited guest access.
 
- Feed Browsing
+ **Feed Browsing**
 - Software Components: 
   - UI: Scrollable list with images/videos.
   - Business Logic: Algorithm for personalizing feed based on user interactions.
@@ -76,7 +76,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes, for fresh content; cached for offline.
 - If Network Slow/Unavailable: Loads cached posts; may show stale content or "No internet" banner; refreshes fail.
   
- Posting Content
+ **Posting Content**
 - Software Components: 
   - UI: Camera/upload interface with editing tools.
   - Business Logic: Image processing, caption parsing.
@@ -85,7 +85,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes, for uploading.
 - If Network Slow/Unavailable: Queues upload for later; shows progress bar or error; local drafts possible.
 
-   Stories
+   **Stories**
 - Software Components: 
   - UI: Circular icons at top, swipeable views.
   - Business Logic: Expiration logic (24 hours).
@@ -94,7 +94,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes.
 - If Network Slow/Unavailable: Views cached stories; new ones can't be added or viewed live.
 
- Reels
+ **Reels**
 - Software Components: 
   - UI: Video editor and player.
   - Business Logic: Recommendation algorithms using ML.
@@ -103,7 +103,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes.
 - If Network Slow/Unavailable: Plays downloaded reels; creation limited to local editing.
 
- Direct Messaging (DMs)
+ **Direct Messaging (DMs)**
 - Software Components: 
   - UI: Chat interface.
   - Business Logic: Message encryption and delivery.
@@ -112,7 +112,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes.
 - If Network Slow/Unavailable: Shows offline status; unsent messages queued.
 
- Notifications
+ **Notifications**
 - Software Components: 
   - UI: Bell icon with list.
   - Business Logic: Event triggering (likes, etc.).
@@ -121,7 +121,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes for real-time.
 - If Network Slow/Unavailable: Delays delivery; shows pending notifications when back online.
 
-  Part C: Change and Maintainability
+ ## Part C: Change and Maintainability
 
 Chosen Change Scenario: Add Mobile Payments in Uganda
 This involves integrating local mobile money systems (e.g., MTN MoMo, Airtel Money) for in-app purchases, shopping, or tipping creators.
@@ -135,7 +135,7 @@ Shopping tags or checkout flows might conflict with new payment gateways. Notifi
 - Why would this change be difficult to implement?
 Regulatory compliance with Uganda's payment laws and taxes (e.g., mobile money tariffs). High fraud risks require enhanced security. Integration with fragmented mobile money providers; poor network in rural areas could cause failures. User education on fees and safety; testing across devices in Uganda's market.
 
-Part D: Software Construction Challenges
+## Part D: Software Construction Challenges
 
 Here are 5 engineering challenges in maintaining or improving Instagram, with brief explanations:
 
@@ -145,4 +145,14 @@ Here are 5 engineering challenges in maintaining or improving Instagram, with br
 - Backward Compatibility: Updates must support old app versions; changing APIs can break third-party integrations.
 - Reliability Under Poor Network Conditions: In areas like Uganda, apps must handle intermittent connectivity with caching and offline modes.
 
+ ## Part E: Group Reflection
+
+1. What surprised your group most about the complexity behind this app?  
+   The sheer scale of microservices and ML for recommendations; we didn't realize how much asynchronous processing is needed for uploads and feeds.
+
+2. Why is writing “working code” not enough for software systems at this scale?  
+   At scale, code must be maintainable, scalable, and resilient; issues like downtime affect millions, requiring monitoring, testing, and architecture focus.
+
+3. What did you learn about teamwork from this exercise?  
+   Dividing roles helped efficiency, but collaboration ensured balanced insights; remote tools like GitHub mimic real software teams.
 

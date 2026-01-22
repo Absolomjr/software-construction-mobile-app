@@ -54,7 +54,7 @@ The following features define Instagram's core functionality:
   Notifications inform users about likes, comments, follows, mentions, and messages, creating a feedback loop that drives continued engagement.
 
 
-Part B: Thinking Behind the Scenes
+## Part B: Thinking Behind the Scenes
 
 For each feature, we discuss the likely software components involved (UI, Business Logic, Network/APIs, Data Storage), whether it requires internet connectivity, and what might happen if the network is slow or unavailable. Our reasoning is based on logical analysis of Instagram's architecture, which uses microservices, React Native for the frontend, Django/Python for backend, and databases like PostgreSQL and Cassandra.
 
@@ -121,7 +121,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes for real-time.
 - If Network Slow/Unavailable: Delays delivery; shows pending notifications when back online.
 
-  Part C: Change and Maintainability
+ ## Part C: Change and Maintainability
 
 Chosen Change Scenario: Add Mobile Payments in Uganda
 This involves integrating local mobile money systems (e.g., MTN MoMo, Airtel Money) for in-app purchases, shopping, or tipping creators.
@@ -135,7 +135,7 @@ Shopping tags or checkout flows might conflict with new payment gateways. Notifi
 - Why would this change be difficult to implement?
 Regulatory compliance with Uganda's payment laws and taxes (e.g., mobile money tariffs). High fraud risks require enhanced security. Integration with fragmented mobile money providers; poor network in rural areas could cause failures. User education on fees and safety; testing across devices in Uganda's market.
 
-Part D: Software Construction Challenges
+## Part D: Software Construction Challenges
 
 Here are 5 engineering challenges in maintaining or improving Instagram, with brief explanations:
 

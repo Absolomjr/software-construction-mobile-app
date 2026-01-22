@@ -1,12 +1,148 @@
 # software-construction-mobile-app: Instagram
 
-Group Members and Roles
+Group Members and Roles.
+- Coordinator: Lufene Mark Travis - Kept the group on track and facilitated discussions.
+- App Analyst: Puoch Mabor Makuei - Led feature identification and overview.
+- Systems Thinker: Absolom Orianga - Focused on backend and architecture reasoning.
+- Risk & Change Analyst: Sebata Allan Kagimu - Focused on maintainability and challenges.
+- Documentation Lead: Mubiru Humphery - Ensured clarity and structure in README.
 
-Part A: Understanding the App
+All members contributed jointly to discussions, research, and writing.
 
- 1. App Overview
-- What problem does this app solve?  
-  Instagram solves the problem of sharing visual content (photos and videos) in a social network, allowing users to connect, express themselves, and discover content from others. It facilitates social interaction through likes, comments, and direct messaging, while also supporting content creation with features like filters and editing tools.
+## Part A: Understanding the App
 
-- Who are its primary users?  
-  Primary users include individuals aged 18-45, content creators, influencers, Sports media, businesses for marketing, and general social media users worldwide. In 2026, it has over 2 billion monthly active users, with a focus on younger demographics and mobile-first audiences.
+**App Analyzed:** Instagram  
+**Role:** App Analyst – Puoch Mabor Makuei
+
+### 1. App Overview
+
+**What problem does this app solve?**  
+Instagram solves the problem of visual-first communication at scale. Before platforms like Instagram, sharing photos or videos required fragmented tools or private messaging. Instagram brings creation, editing, publishing, and discovery of visual content into a single mobile-first platform.
+
+Beyond sharing, Instagram addresses content discovery and engagement. Users are continuously shown content aligned with their interests through personalized feeds, stories, and reels. For creators and businesses, Instagram acts as a distribution and marketing platform where attention can be converted into influence, reach, or income. In practice, Instagram functions as both a social network and a large-scale content delivery system.
+
+**Who are its primary users?**  
+Instagram's primary users are mobile-first individuals, largely between the ages of 18–34. These include casual users sharing daily moments, content creators building personal brands, influencers monetizing audiences, and businesses marketing products and services.
+
+In regions such as Uganda and across Africa, Instagram is also widely used by small businesses, freelancers, and creatives as a lightweight alternative to full websites. This makes the platform socially relevant and economically important, especially in mobile-dominated markets.
+
+---
+
+### 2. Core Features
+
+The following features define Instagram's core functionality:
+
+- **User Authentication & Profiles**  
+  Users create accounts, log in securely, and manage profiles that represent their identity on the platform. Profiles consolidate posts, followers, bios, and activity history.
+
+- **Personalized Feed Browsing**  
+  Instagram displays a dynamic feed of posts from followed accounts and recommended content. The feed adapts based on user interactions such as likes, comments, shares, and watch time.
+
+- **Content Creation & Posting**  
+  Users can upload photos and videos, apply filters, edit media, write captions, tag users, and add locations. This feature lowers the barrier to content creation.
+
+- **Stories**  
+  Stories allow temporary photo or video posts that disappear after 24 hours. They support interactive elements like polls, questions, and reactions, encouraging frequent and informal sharing.
+
+- **Reels (Short-form Video)**  
+  Reels enable users to create and consume short, engaging videos designed for discovery beyond their follower base. This feature is central to Instagram's growth and engagement strategy.
+
+- **Direct Messaging (DMs)**  
+  Instagram includes private messaging for one-on-one and group conversations, supporting text, images, videos, voice notes, and shared posts.
+
+- **Notifications & Activity Tracking**  
+  Notifications inform users about likes, comments, follows, mentions, and messages, creating a feedback loop that drives continued engagement.
+
+
+Part B: Thinking Behind the Scenes
+
+For each feature, we discuss the likely software components involved (UI, Business Logic, Network/APIs, Data Storage), whether it requires internet connectivity, and what might happen if the network is slow or unavailable. Our reasoning is based on logical analysis of Instagram's architecture, which uses microservices, React Native for the frontend, Django/Python for backend, and databases like PostgreSQL and Cassandra.
+
+ Login/Authentication
+- Software Components: 
+  - UI: Login screen with input fields and buttons.
+  - Business Logic: Validation of credentials and session management.
+  - Network/APIs: Calls to authentication servers (e.g., via REST APIs) for verification.
+  - Data Storage: User credentials stored in secure databases.
+- Requires Internet? Yes, to verify credentials with servers.
+- If Network Slow/Unavailable: App may show cached last login or offline mode, but new logins fail; could display error messages or allow limited guest access.
+
+ Feed Browsing
+- Software Components: 
+  - UI: Scrollable list with images/videos.
+  - Business Logic: Algorithm for personalizing feed based on user interactions.
+  - Network/APIs: Fetches data from feed generation services.
+  - Data Storage: Caches recent feeds locally; uses databases for user follows and content metadata.
+- Requires Internet? Yes, for fresh content; cached for offline.
+- If Network Slow/Unavailable: Loads cached posts; may show stale content or "No internet" banner; refreshes fail.
+  
+ Posting Content
+- Software Components: 
+  - UI: Camera/upload interface with editing tools.
+  - Business Logic: Image processing, caption parsing.
+  - Network/APIs: Uploads to media services via APIs.
+  - Data Storage: Media stored in cloud (e.g., S3), metadata in DBs.
+- Requires Internet? Yes, for uploading.
+- If Network Slow/Unavailable: Queues upload for later; shows progress bar or error; local drafts possible.
+
+   Stories
+- Software Components: 
+  - UI: Circular icons at top, swipeable views.
+  - Business Logic: Expiration logic (24 hours).
+  - Network/APIs: Fetches and uploads via dedicated services.
+  - Data Storage: Temporary storage with TTL (time-to-live).
+- Requires Internet? Yes.
+- If Network Slow/Unavailable: Views cached stories; new ones can't be added or viewed live.
+
+ Reels
+- Software Components: 
+  - UI: Video editor and player.
+  - Business Logic: Recommendation algorithms using ML.
+  - Network/APIs: Video processing and distribution.
+  - Data Storage: Videos in distributed storage.
+- Requires Internet? Yes.
+- If Network Slow/Unavailable: Plays downloaded reels; creation limited to local editing.
+
+ Direct Messaging (DMs)
+- Software Components: 
+  - UI: Chat interface.
+  - Business Logic: Message encryption and delivery.
+  - Network/APIs: Real-time APIs (e.g., WebSockets).
+  - Data Storage: Messages in databases.
+- Requires Internet? Yes.
+- If Network Slow/Unavailable: Shows offline status; unsent messages queued.
+
+ Notifications
+- Software Components: 
+  - UI: Bell icon with list.
+  - Business Logic: Event triggering (likes, etc.).
+  - Network/APIs: Push notifications via services like FCM.
+  - Data Storage: Notification logs in DBs.
+- Requires Internet? Yes for real-time.
+- If Network Slow/Unavailable: Delays delivery; shows pending notifications when back online.
+
+  Part C: Change and Maintainability
+
+Chosen Change Scenario: Add Mobile Payments in Uganda
+This involves integrating local mobile money systems (e.g., MTN MoMo, Airtel Money) for in-app purchases, shopping, or tipping creators.
+
+- Which parts of the app would need changes?
+UI: Add payment buttons in shopping/stories/reels. Business Logic: Integrate with Ugandan payment APIs. Network/APIs: New endpoints for transactions. Data Storage: Secure storage for payment details.
+
+- What existing features could break?
+Shopping tags or checkout flows might conflict with new payment gateways. Notifications could overload if transaction alerts are added. Feed algorithms might need adjustment for payment-related content.
+
+- Why would this change be difficult to implement?
+Regulatory compliance with Uganda's payment laws and taxes (e.g., mobile money tariffs). High fraud risks require enhanced security. Integration with fragmented mobile money providers; poor network in rural areas could cause failures. User education on fees and safety; testing across devices in Uganda's market.
+
+Part D: Software Construction Challenges
+
+Here are 5 engineering challenges in maintaining or improving Instagram, with brief explanations:
+
+- Performance and Scalability: Handling billions of users requires efficient load balancing and sharding; spikes in traffic (e.g., viral reels) can overload servers.
+- Security and Data Privacy: Protecting against hacks, leaks, and complying with global regs like GDPR; features like DMs need end-to-end encryption.
+- Testing Across Devices and OS Versions: Android/iOS fragmentation means extensive testing; memory leaks on low-end devices can crash the app.
+- Backward Compatibility: Updates must support old app versions; changing APIs can break third-party integrations.
+- Reliability Under Poor Network Conditions: In areas like Uganda, apps must handle intermittent connectivity with caching and offline modes.
+
+

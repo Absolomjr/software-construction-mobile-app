@@ -145,4 +145,14 @@ Here are 5 engineering challenges in maintaining or improving Instagram, with br
 - Backward Compatibility: Updates must support old app versions; changing APIs can break third-party integrations.
 - Reliability Under Poor Network Conditions: In areas like Uganda, apps must handle intermittent connectivity with caching and offline modes.
 
+ ## Part E: Group Reflection
+
+1. What surprised your group most about the complexity behind this app?  
+   The sheer scale of microservices and ML for recommendations; we didn't realize how much asynchronous processing is needed for uploads and feeds.
+
+2. Why is writing “working code” not enough for software systems at this scale?  
+   At scale, code must be maintainable, scalable, and resilient; issues like downtime affect millions, requiring monitoring, testing, and architecture focus.
+
+3. What did you learn about teamwork from this exercise?  
+   Dividing roles helped efficiency, but collaboration ensured balanced insights; remote tools like GitHub mimic real software teams.
 

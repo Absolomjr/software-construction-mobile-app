@@ -85,7 +85,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes, for uploading.
 - If Network Slow/Unavailable: Queues upload for later; shows progress bar or error; local drafts possible.
 
-   **Stories**
+ **Stories**
 - Software Components: 
   - UI: Circular icons at top, swipeable views.
   - Business Logic: Expiration logic (24 hours).

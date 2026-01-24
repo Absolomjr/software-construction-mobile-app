@@ -121,6 +121,18 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes for real-time.
 - If Network Slow/Unavailable: Delays delivery; shows pending notifications when back online.
 
+   **Explore, Search & Map-Based Discovery (Instagram Maps)**
+
+  - Software Components:
+    - UI: Search tab, explore grid, and interactive map interface showing posts by location.
+    - Business Logic: Ranking logic for trending places, location-based filtering, and relevance scoring.
+    - Network/APIs: Location services, search APIs, and geospatial queries to fetch nearby or tagged content.
+    - Data Storage: Location metadata linked to posts, places, and businesses stored in databases with geospatial indexing.
+
+  - Requires Internet? Yes, especially for real-time discovery and map updates.
+
+  - If Network Slow/Unavailable: Previously loaded explore content may appear, but map interactions, nearby place discovery, and live search results will fail or load slowly.
+
  ## Part C: Change and Maintainability
 
 Chosen Change Scenario: Add Mobile Payments in Uganda

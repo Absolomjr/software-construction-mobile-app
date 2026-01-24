@@ -121,16 +121,64 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes for real-time.
 - If Network Slow/Unavailable: Delays delivery; shows pending notifications when back online.
 
- **Explore, Search & Map-Based Discovery (Instagram Maps)**
+   **Explore, Search & Map-Based Discovery (Instagram Maps)**
 
-- Software Components:
-  - UI: Search tab, explore grid, and interactive map interface showing posts by location.
-  - Business Logic: Ranking logic for trending places, location-based filtering, and relevance scoring.
-  - Network/APIs: Location services, search APIs, and geospatial queries to fetch nearby or tagged content.
-  - Data Storage: Location metadata linked to posts, places, and businesses stored in databases with geospatial indexing.
+  - Software Components:
+    - UI: Search tab, explore grid, and interactive map interface showing posts by location.
+    - Business Logic: Ranking logic for trending places, location-based filtering, and relevance scoring.
+    - Network/APIs: Location services, search APIs, and geospatial queries to fetch nearby or tagged content.
+    - Data Storage: Location metadata linked to posts, places, and businesses stored in databases with geospatial indexing.
 
-- Requires Internet? Yes, especially for real-time discovery and map updates.
+  - Requires Internet? Yes, especially for real-time discovery and map updates.
 
-- If Network Slow/Unavailable: Previously loaded explore content may appear, but map interactions, nearby place discovery, and live search results will fail or load slowly.
+  - If Network Slow/Unavailable: Previously loaded explore content may appear, but map interactions, nearby place discovery, and live search results will fail or load slowly.
+
+ ## Part C: Change and Maintainability
+
+Chosen Change Scenario: Add Mobile Payments in Uganda
+This involves integrating local mobile money mediums and systems (e.g., MTN MoMo, Airtel Money) for in-app purchases, shopping, or tipping creators.
+
+- Which parts of the app would need changes?
+  
+UI: Add payment buttons in shopping/stories/reels. Business Logic: Integrate with Ugandan payment APIs. Network/APIs: New endpoints for transactions. Data Storage: Secure storage for payment details.
+
+- What existing features could break?
+  
+Shopping tags or checkout flows might conflict with new payment gateways. Notifications could overload if transaction alerts are added. Feed algorithms might need adjustment for payment-related content.
+
+- Why would this change be difficult to implement?
+  
+Regulatory compliance with Uganda's payment laws and taxes (e.g., mobile money tariffs). High fraud risks require enhanced security. Integration with fragmented mobile money providers; poor network in rural areas could cause failures. User education on fees and safety; testing across devices in Uganda's market.
+
+## Part D: Software Construction Challenges
+
+Here are 5 engineering challenges in maintaining or improving Instagram, with brief explanations:
+
+- Performance and Scalability: Handling billions of users requires efficient load balancing and sharding; spikes in traffic (e.g., viral reels) can overload servers.
+- Security and Data Privacy: Protecting against hacks, leaks, and complying with global regs like GDPR; features like DMs need end-to-end encryption.
+- Testing Across Devices and OS Versions: Android/iOS fragmentation means extensive testing; memory leaks on low-end devices can crash the app.
+- Backward Compatibility: Updates must support old app versions; changing APIs can break third-party integrations.
+- Reliability Under Poor Network Conditions: In areas like Uganda, apps must handle intermittent connectivity with caching and offline modes.
+
+ ## Part E: Group Reflection
+
+1. What surprised your group most about the complexity behind this app?  
+   The sheer scale of microservices and ML for recommendations; we didn't realize how much asynchronous processing is needed for uploads and feeds.
+
+2. Why is writing “working code” not enough for software systems at this scale?  
+   At scale, code must be maintainable, scalable, and resilient; issues like downtime affect millions, requiring monitoring, testing, and architecture focus.
+
+3. What did you learn about teamwork from this exercise?  
+   Dividing roles helped efficiency, but collaboration ensured balanced insights; remote tools like GitHub mimic real software teams.
+
+**Group Contributions**
+- Mark Travis Lufene: Coordinated meetings, contributed to Parts A and E.
+- Puoch Mabor Makuei: Researched features, wrote Part A.
+- Absolom Orianga: Analyzed architecture, contributed to Part B.
+- Allan Kagimu Ssebatta: Handled challenges, wrote Parts C and D.
+- Humphrey Mubiru: Structured document, contibuted to part C and D edited for clarity.
+
+All members reviewed and approved the final content
+
 
 

@@ -159,3 +159,14 @@ Here are 5 engineering challenges in maintaining or improving Instagram, with br
 3. What did you learn about teamwork from this exercise?  
    Dividing roles helped efficiency, but collaboration ensured balanced insights; remote tools like GitHub mimic real software teams.
 
+**Group Contributions**
+- Mark: Coordinated meetings, contributed to Parts A and E.
+- Puoch: Researched features, wrote Part A.
+- Absolom: Analyzed architecture, contributed to Part B.
+- Allan: Handled challenges, wrote Parts C and D.
+- Humphrey: Structured document, contibuted to part C and D edited for clarity.
+
+All members reviewed and approved the final content
+
+
+

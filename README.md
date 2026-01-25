@@ -1,11 +1,11 @@
 # software-construction-mobile-app: Instagram
 
 Group Members and Roles.
-- Coordinator: Lufene Mark Travis - Kept the group on track and facilitated discussions.
-- App Analyst: Puoch Mabor Makuei - Led feature identification and overview.
-- Systems Thinker: Absolom Orianga - Focused on backend and architecture reasoning.
-- Risk & Change Analyst: Ssebatta Allan Kagimu - Focused on maintainability and challenges.
-- Documentation Lead: Mubiru Humphery - Ensured clarity and structure in README.
+- Coordinator: Lufene Mark Travis (S23B23/032) - Kept the group on track and facilitated discussions.
+- App Analyst: Puoch Mabor Makuei (S23B23/055) - Led feature identification and overview.
+- Systems Thinker: Absolom Orianga (S23B23/075) - Focused on backend and architecture reasoning.
+- Risk & Change Analyst: Ssebatta Allan Kagimu (S23B23/057) - Focused on maintainability and challenges.
+- Documentation Lead: Mubiru Humphery (S23B23/035) - Ensured clarity and structure in README.
 
 All members contributed jointly to discussions, research, and writing.
 

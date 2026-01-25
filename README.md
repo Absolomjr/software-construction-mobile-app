@@ -176,7 +176,7 @@ Here are 5 engineering challenges in maintaining or improving Instagram, with br
 - Puoch Mabor Makuei: Researched features, wrote Part A.
 - Absolom Orianga: Analyzed architecture, contributed to Part B.
 - Allan Kagimu Ssebatta: Handled challenges, wrote Parts C and D.
-- Humphrey Mubiru: Structured document, contibuted to part C and D edited for clarity.
+- Humphery Mubiru: Structured document, contributed to part C and D, edited for clarity.
 
 All members reviewed and approved the final content
 

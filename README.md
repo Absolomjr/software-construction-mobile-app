@@ -4,7 +4,7 @@ Group Members and Roles.
 - Coordinator: Lufene Mark Travis - Kept the group on track and facilitated discussions.
 - App Analyst: Puoch Mabor Makuei - Led feature identification and overview.
 - Systems Thinker: Absolom Orianga - Focused on backend and architecture reasoning.
-- Risk & Change Analyst: Sebata Allan Kagimu - Focused on maintainability and challenges.
+- Risk & Change Analyst: Ssebatta Allan Kagimu - Focused on maintainability and challenges.
 - Documentation Lead: Mubiru Humphery - Ensured clarity and structure in README.
 
 All members contributed jointly to discussions, research, and writing.
@@ -121,10 +121,22 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes for real-time.
 - If Network Slow/Unavailable: Delays delivery; shows pending notifications when back online.
 
+   **Explore, Search & Map-Based Discovery (Instagram Maps)**
+
+  - Software Components:
+    - UI: Search tab, explore grid, and interactive map interface showing posts by location.
+    - Business Logic: Ranking logic for trending places, location-based filtering, and relevance scoring.
+    - Network/APIs: Location services, search APIs, and geospatial queries to fetch nearby or tagged content.
+    - Data Storage: Location metadata linked to posts, places, and businesses stored in databases with geospatial indexing.
+
+  - Requires Internet? Yes, especially for real-time discovery and map updates.
+
+  - If Network Slow/Unavailable: Previously loaded explore content may appear, but map interactions, nearby place discovery, and live search results will fail or load slowly.
+
  ## Part C: Change and Maintainability
 
 Chosen Change Scenario: Add Mobile Payments in Uganda
-This involves integrating local mobile money systems (e.g., MTN MoMo, Airtel Money) for in-app purchases, shopping, or tipping creators.
+This involves integrating local mobile money mediums and systems (e.g., MTN MoMo, Airtel Money) for in-app purchases, shopping, or tipping creators.
 
 - Which parts of the app would need changes?
   
@@ -160,11 +172,11 @@ Here are 5 engineering challenges in maintaining or improving Instagram, with br
    Dividing roles helped efficiency, but collaboration ensured balanced insights; remote tools like GitHub mimic real software teams.
 
 **Group Contributions**
-- Mark: Coordinated meetings, contributed to Parts A and E.
-- Puoch: Researched features, wrote Part A.
-- Absolom: Analyzed architecture, contributed to Part B.
-- Allan: Handled challenges, wrote Parts C and D.
-- Humphrey: Structured document, contibuted to part C and D edited for clarity.
+- Mark Travis Lufene: Coordinated meetings, contributed to Parts A and E.
+- Puoch Mabor Makuei: Researched features, wrote Part A.
+- Absolom Orianga: Analyzed architecture, contributed to Part B.
+- Allan Kagimu Ssebatta: Handled challenges, wrote Parts C and D.
+- Humphrey Mubiru: Structured document, contibuted to part C and D edited for clarity.
 
 All members reviewed and approved the final content
 

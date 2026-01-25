@@ -108,7 +108,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
   - UI: Chat interface.
   - Business Logic: Message encryption and delivery.
   - Network/APIs: Real-time APIs (e.g., WebSockets).
-  - Data Storage: Messages in databases.
+  - Data Storage: Messages are in databases.
 - Requires Internet? Yes.
 - If Network Slow/Unavailable: Shows offline status; unsent messages queued.
 
@@ -127,7 +127,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
     - UI: Search tab, explore grid, and interactive map interface showing posts by location.
     - Business Logic: Ranking logic for trending places, location-based filtering, and relevance scoring.
     - Network/APIs: Location services, search APIs, and geospatial queries to fetch nearby or tagged content.
-    - Data Storage: Location metadata linked to posts, places, and businesses stored in databases with geospatial indexing.
+    - Data Storage: Location metadata are linked to posts, places, and businesses stored in databases with geospatial indexing.
 
   - Requires Internet? Yes, especially for real-time discovery and map updates.
 
@@ -178,7 +178,7 @@ Here are 5 engineering challenges in maintaining or improving Instagram, with br
 - Allan Kagimu Ssebatta: Handled challenges, wrote Parts C and D.
 - Humphery Mubiru: Structured document, contributed to part C and D, edited for clarity.
 
-All members reviewed and approved the final content
+All members reviewed and approved the final content of this document.
 
 
 

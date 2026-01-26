@@ -141,7 +141,6 @@ This involves integrating local mobile money mediums and systems (e.g., MTN MoMo
 - Which parts of the app would need changes?
   
 UI: Add payment buttons in shopping/stories/reels. Business Logic: Integrate with Ugandan payment APIs. Network/APIs: New endpoints for transactions. Data Storage: Secure storage for payment details.
-
 - What existing features could break?
   
 Shopping tags or checkout flows might conflict with new payment gateways. Notifications could overload if transaction alerts are added. Feed algorithms might need adjustment for payment-related content.
@@ -154,7 +153,7 @@ Regulatory compliance with Uganda's payment laws and taxes (e.g., mobile money t
 
 Here are 5 engineering challenges in maintaining or improving Instagram, with brief explanations:
 
-- Performance and Scalability: Handling billions of users requires efficient load balancing and sharding; spikes in traffic (e.g., viral reels) can overload servers.
+- Performance and Scalability: Handling billions of users requires efficient load balancing and sharding; spikes in traffic (e.g. viral reels) can overload servers.
 - Security and Data Privacy: Protecting against hacks, leaks, and complying with global regs like GDPR; features like DMs need end-to-end encryption.
 - Testing Across Devices and OS Versions: Android/iOS fragmentation means extensive testing; memory leaks on low-end devices can crash the app.
 - Backward Compatibility: Updates must support old app versions; changing APIs can break third-party integrations.

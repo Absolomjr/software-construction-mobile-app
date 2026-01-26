@@ -42,7 +42,7 @@ The following features define Instagram's core functionality:
   Users can upload photos and videos, apply filters, edit media, write captions, tag users, and add locations. This feature lowers the barrier to content creation.
 
 - **Stories**  
-  Stories allow temporary photo or video posts that disappear after 24 hours. They support interactive elements like polls, questions, and reactions, encouraging frequent and informal sharing.
+  Stories allow temporary photo or video posts that disappear after 24 hours. They support interactive elements like polls, questions, and reactions, encouraging frequent and informal sharing of content.
 
 - **Reels (Short-form Video)**  
   Reels enable users to create and consume short, engaging videos designed for discovery beyond their follower base. This feature is central to Instagram's growth and engagement strategy.

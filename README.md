@@ -56,7 +56,7 @@ The following features define Instagram's core functionality:
 
 ## Part B: Thinking Behind the Scenes
 
-For each feature, we discuss the likely software components involved (UI, Business Logic, Network/APIs, Data Storage), whether it requires internet connectivity, and what might happen if the network is slow or unavailable. Our reasoning is based on logical analysis of Instagram's architecture, which uses microservices, React Native for the frontend, Django/Python for backend, and databases like PostgreSQL and Cassandra.
+For each feature, we discuss the likely software components involved such as the UI, Business Logic, Network/APIs, Data Storage, whether it requires internet connectivity, and what might happen if the network is slow or unavailable. Our reasoning is based on logical analysis of Instagram's architecture, which uses microservices, React Native for the frontend, Django/Python for backend, and databases like PostgreSQL and Cassandra.
 
  **Login/Authentication**
 - Software Components: 

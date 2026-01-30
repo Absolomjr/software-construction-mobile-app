@@ -72,7 +72,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Software Components: 
   - UI: Chat interface.
   - Business Logic: Message encryption and delivery.
-  - Network/APIs: Real-time APIs (e.g., WebSockets).
+  - Network/APIs: Real-time APIs (e.g, WebSockets).
   - Data Storage: Messages in databases.
 - Requires Internet? Yes.
 - If Network Slow/Unavailable: Shows offline status; unsent messages queued.
@@ -89,7 +89,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
   Part C: Change and Maintainability
 
 Chosen Change Scenario: Add Mobile Payments in Uganda
-This involves integrating local mobile money systems (e.g., MTN MoMo, Airtel Money) for in-app purchases, shopping, or tipping creators.
+This involves integrating local mobile money systems (e.g., MTN MoMo, Airtel Money) for in app purchases, shopping, or tipping creators.
 
 - Which parts of the app would need changes?
 UI: Add payment buttons in shopping/stories/reels. Business Logic: Integrate with Ugandan payment APIs. Network/APIs: New endpoints for transactions. Data Storage: Secure storage for payment details.

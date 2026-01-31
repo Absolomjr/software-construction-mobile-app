@@ -63,7 +63,7 @@ For each feature, we discuss the likely software components involved such as the
   - UI: Login screen with input fields and buttons.
   - Business Logic: Validation of credentials and session management.
   - Network/APIs: Calls to authentication servers (e.g., via REST APIs) for verification.
-  - Data Storage: User credentials stored in secure databases.
+  - Data Storage: User credentials are stored in secure databases.
 - Requires Internet? Yes, to verify credentials with servers.
 - If Network Slow/Unavailable: App may show cached last login or offline mode, but new logins fail; could display error messages or allow limited guest access.
 

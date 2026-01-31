@@ -154,10 +154,10 @@ Regulatory compliance with Uganda's payment laws and taxes (e.g., mobile money t
 Here are 5 engineering challenges in maintaining or improving Instagram :
 
 - Performance and Scalability: Handling billions of users requires efficient load balancing and sharding; spikes in traffic (for example: viral reels) can overload servers.
-- Security and Data Privacy: Protecting against hacks, leaks, and complying with global regs like GDPR; features like DMs need end-to-end encryption.
 - Testing Across Devices and OS Versions: Android/iOS fragmentation means extensive testing; memory leaks on low-end devices can crash the app.
 - Reliability Under Poor Network Conditions: In areas like Uganda, apps must handle intermittent connectivity with caching and offline modes.
 - Backward Compatibility: Updates must support old app versions; changing APIs can break third-party integrations.
+-  Security and Data Privacy: Protecting against hacks, leaks, and complying with global regs like GDPR; features like DMs need end-to-end encryption.
 
 
  ## Part E: Group Reflection

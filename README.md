@@ -121,7 +121,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes for real-time.
 - If Network Slow/Unavailable: Delays delivery; shows pending notifications when back online.
 
-   **Explore, Search & Map-Based Discovery (Instagram Maps)**
+ **Explore, Search & Map-Based Discovery (Instagram Maps)**
   - Software Components:
     - UI: Search tab, explore grid, and interactive map interface showing posts by location.
     - Business Logic: Ranking logic for trending places, location-based filtering, and relevance scoring.

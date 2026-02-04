@@ -10,11 +10,7 @@
 ## Key TakeAway for Students
 Software Construction is not about writing more code, its about building software that survives change, supports teamwork and earns trust!
 
-### *2. Situation where poor maintainability could cause serious problems*
 
-Consider a hospital management system developed without proper structure, naming conventions, or documentation. If the original developers leave and new developers must update the system urgently for example, to fix a patient-data bug the confusing code could lead to mistakes. This might cause incorrect patient records, delays in treatment, or even privacy breaches. Poor maintainability increases risk, cost, and downtime because small changes become difficult and dangerous.
-
----
 ### *1. Difference between Programming and Software Construction (with a real-world example)*
 
 Programming mainly focuses on writing code to implement specific functionality, such as creating a function or solving a problem using a programming language. Software construction is broader. it includes *designing, structuring, testing, documenting, debugging, and maintaining* software in a reliable and scalable way.
@@ -23,4 +19,10 @@ Programming mainly focuses on writing code to implement specific functionality, 
 Imagine building a *smart transportation system in Kampala*. Programming would involve writing code to calculate traffic routes or manage GPS data. Software construction would include planning the architecture, organizing modules, handling errors, writing tests, documenting APIs, and ensuring the system can be updated as the city grows. Programming is one part of the larger software construction process.
 
 ---
+### *2. Situation where poor maintainability could cause serious problems*
+
+Consider a hospital management system developed without proper structure, naming conventions, or documentation. If the original developers leave and new developers must update the system urgently for example, to fix a patient-data bug the confusing code could lead to mistakes. This might cause incorrect patient records, delays in treatment, or even privacy breaches. Poor maintainability increases risk, cost, and downtime because small changes become difficult and dangerous.
+
+---
+
 

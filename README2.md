@@ -30,7 +30,3 @@ Code reviews allow developers to examine each other’s work before it becomes p
 ### *5. Reflect briefly on how AI can help in understanding code without replacing learning.*
 
 AI can support developers by explaining unfamiliar code, suggesting improvements, and helping identify errors quickly. For example, it can break down complex functions into simpler explanations or provide examples of best practices. However, responsible use means treating AI as a *learning assistant*, not a replacement for thinking. Developers should still analyze problems themselves, verify AI suggestions, and practice writing their own solutions to build deep understanding and long-term skills
-
-
-## Key TakeAway for Students
-Software Construction is not about writing more code, its about building software that survives change, supports teamwork and earns trust!

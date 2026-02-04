@@ -5,3 +5,7 @@
 **3. Explain why version control is important in team based software development**
 **4. Describe how code reviews improve both software quality and developer skills**
 **5. Reflect briefly on how AI can help in understanding code without replacing learning.**
+
+
+## Key TakeAway for Students
+Software Construction is not about writing more code, its about building software that survives change, supports teamwork and earns trust!

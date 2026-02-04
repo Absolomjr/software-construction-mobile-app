@@ -26,7 +26,7 @@ Consider a hospital management system developed without proper structure, naming
 ---
 ### *3. Why version control is important in team-based software development*
 
-Version control systems like Git are essential for team-based software development because they track every change made to the codebase over time. This allows multiple developers to work on different features simultaneously without overwriting each other's work. If a bug is introduced, teams can identify when and where it happened and revert to a previous stable version. Version control also provides a complete history of who made what changes and why, which is critical for accountability, code reviews, and understanding the evolution of the project. Without version control, collaboration becomes chaotic, and recovering from mistakes becomes nearly impossible.
+Version control systems like Git are essential for team-based software development because they track every change made to the codebase over time. This allows multiple developers to work on different features simultaneously without overwriting each other's work. If a bug is introduced, teams can identify when and where it happened and revert to a previous stable version. Version control also provides a complete history of who made what changes and why. This is critical for accountability, code reviews, and understanding the evolution of the project. Without version control, collaboration becomes chaotic, and recovering from mistakes becomes nearly impossible.
 
 ---
 ### *4. How code reviews improve software quality and developer skills*
@@ -37,6 +37,6 @@ Code reviews allow developers to examine each other’s work before it becomes p
 
 ### *5. How AI can help in understanding code without replacing learning*
 
-AI tools like GitHub Copilot, ChatGPT, and code analysis assistants can help developers understand unfamiliar code by explaining what it does, suggesting improvements, or generating boilerplate code. This accelerates learning by providing instant explanations and examples, allowing developers to focus on higher-level problem-solving. However, AI cannot replace the deep understanding that comes from writing, debugging, and refactoring code yourself. Relying solely on AI without understanding the fundamentals can lead to brittle solutions and an inability to troubleshoot when things go wrong. AI is best used as a learning aid and productivity tool, not as a substitute for building foundational knowledge.
+AI tools like GitHub Copilot, ChatGPT, and code analysis assistants can help developers understand unfamiliar code by explaining what it does, suggesting improvements, or generating boilerplate code. This accelerates learning by providing instant explanations and examples. It allows developers to focus on higher-level problem-solving. However, AI cannot replace the deep understanding that comes from writing, debugging, and refactoring code yourself. Relying solely on AI without understanding the fundamentals can lead to brittle solutions and an inability to troubleshoot when things go wrong. AI is best used as a learning aid and productivity tool, not as a substitute for building foundational knowledge.
 
 ---

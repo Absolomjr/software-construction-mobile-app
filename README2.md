@@ -24,5 +24,7 @@ Imagine building a *smart transportation system in Kampala*. Programming would i
 Consider a hospital management system developed without proper structure, naming conventions, or documentation. If the original developers leave and new developers must update the system urgently for example, to fix a patient-data bug the confusing code could lead to mistakes. This might cause incorrect patient records, delays in treatment, or even privacy breaches. Poor maintainability increases risk, cost, and downtime because small changes become difficult and dangerous.
 
 ---
+**3. Explain why version control is important in team based software development**
 
+Version control systems like Git help teams collaborate safely by tracking changes and maintaining history. They allow multiple developers to work on different features simultaneously without overwriting each other’s work. If something breaks, teams can revert to a previous stable version. Version control also improves accountability through commits and makes collaboration structured using branches, pull requests, and merges.
 

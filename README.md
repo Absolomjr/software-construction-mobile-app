@@ -1,11 +1,11 @@
 # software-construction-mobile-app: Instagram
 
 Group Members and Roles.
-- Coordinator: Lufene Mark Travis - Kept the group on track and facilitated discussions.
-- App Analyst: Puoch Mabor Makuei - Led feature identification and overview.
-- Systems Thinker: Absolom Orianga - Focused on backend and architecture reasoning.
-- Risk & Change Analyst: Ssebatta Allan Kagimu - Focused on maintainability and challenges.
-- Documentation Lead: Mubiru Humphery - Ensured clarity and structure in README.
+- Coordinator: Lufene Mark Travis (S23B23/032) - Kept the group on track and facilitated discussions.
+- App Analyst: Puoch Mabor Makuei (S23B23/055) - Led feature identification and overview.
+- Systems Thinker: Absolom Orianga (S23B23/075) - Focused on backend and architecture reasoning.
+- Risk & Change Analyst: Ssebatta Allan Kagimu (S23B23/057) - Focused on maintainability and challenges.
+- Documentation Lead: Mubiru Humphery (S23B23/035) - Ensured clarity and structure in README.
 
 All members contributed jointly to discussions, research, and writing.
 
@@ -42,7 +42,7 @@ The following features define Instagram's core functionality:
   Users can upload photos and videos, apply filters, edit media, write captions, tag users, and add locations. This feature lowers the barrier to content creation.
 
 - **Stories**  
-  Stories allow temporary photo or video posts that disappear after 24 hours. They support interactive elements like polls, questions, and reactions, encouraging frequent and informal sharing.
+  Stories allow temporary photo or video posts that disappear after 24 hours. They support interactive elements like polls, questions, and reactions, encouraging frequent and informal sharing of content.
 
 - **Reels (Short-form Video)**  
   Reels enable users to create and consume short, engaging videos designed for discovery beyond their follower base. This feature is central to Instagram's growth and engagement strategy.
@@ -56,14 +56,14 @@ The following features define Instagram's core functionality:
 
 ## Part B: Thinking Behind the Scenes
 
-For each feature, we discuss the likely software components involved (UI, Business Logic, Network/APIs, Data Storage), whether it requires internet connectivity, and what might happen if the network is slow or unavailable. Our reasoning is based on logical analysis of Instagram's architecture, which uses microservices, React Native for the frontend, Django/Python for backend, and databases like PostgreSQL and Cassandra.
+For each feature, we discuss the likely software components involved such as the UI, Business Logic, Network/APIs, Data Storage, whether it requires internet connectivity, and what might happen if the network is slow or unavailable. Our reasoning is based on logical analysis of Instagram's architecture, which uses microservices, React Native for the frontend, Django/Python for backend, and databases like PostgreSQL and Cassandra.
 
  **Login/Authentication**
 - Software Components: 
   - UI: Login screen with input fields and buttons.
   - Business Logic: Validation of credentials and session management.
   - Network/APIs: Calls to authentication servers (e.g., via REST APIs) for verification.
-  - Data Storage: User credentials stored in secure databases.
+  - Data Storage: User credentials are stored in secure databases.
 - Requires Internet? Yes, to verify credentials with servers.
 - If Network Slow/Unavailable: App may show cached last login or offline mode, but new logins fail; could display error messages or allow limited guest access.
 
@@ -108,7 +108,7 @@ For each feature, we discuss the likely software components involved (UI, Busine
   - UI: Chat interface.
   - Business Logic: Message encryption and delivery.
   - Network/APIs: Real-time APIs (e.g., WebSockets).
-  - Data Storage: Messages in databases.
+  - Data Storage: Messages are in databases.
 - Requires Internet? Yes.
 - If Network Slow/Unavailable: Shows offline status; unsent messages queued.
 
@@ -121,16 +121,13 @@ For each feature, we discuss the likely software components involved (UI, Busine
 - Requires Internet? Yes for real-time.
 - If Network Slow/Unavailable: Delays delivery; shows pending notifications when back online.
 
-   **Explore, Search & Map-Based Discovery (Instagram Maps)**
-
+ **Explore, Search & Map-Based Discovery (Instagram Maps)**
   - Software Components:
     - UI: Search tab, explore grid, and interactive map interface showing posts by location.
     - Business Logic: Ranking logic for trending places, location-based filtering, and relevance scoring.
     - Network/APIs: Location services, search APIs, and geospatial queries to fetch nearby or tagged content.
-    - Data Storage: Location metadata linked to posts, places, and businesses stored in databases with geospatial indexing.
-
+    - Data Storage: Location metadata are linked to posts, places, and businesses stored in databases with geospatial indexing.
   - Requires Internet? Yes, especially for real-time discovery and map updates.
-
   - If Network Slow/Unavailable: Previously loaded explore content may appear, but map interactions, nearby place discovery, and live search results will fail or load slowly.
 
  ## Part C: Change and Maintainability
@@ -141,7 +138,6 @@ This involves integrating local mobile money mediums and systems (e.g., MTN MoMo
 - Which parts of the app would need changes?
   
 UI: Add payment buttons in shopping/stories/reels. Business Logic: Integrate with Ugandan payment APIs. Network/APIs: New endpoints for transactions. Data Storage: Secure storage for payment details.
-
 - What existing features could break?
   
 Shopping tags or checkout flows might conflict with new payment gateways. Notifications could overload if transaction alerts are added. Feed algorithms might need adjustment for payment-related content.
@@ -152,13 +148,14 @@ Regulatory compliance with Uganda's payment laws and taxes (e.g., mobile money t
 
 ## Part D: Software Construction Challenges
 
-Here are 5 engineering challenges in maintaining or improving Instagram, with brief explanations:
+Here are 5 engineering challenges in maintaining or improving Instagram :
 
-- Performance and Scalability: Handling billions of users requires efficient load balancing and sharding; spikes in traffic (e.g., viral reels) can overload servers.
-- Security and Data Privacy: Protecting against hacks, leaks, and complying with global regs like GDPR; features like DMs need end-to-end encryption.
+- Performance and Scalability: Handling billions of users requires efficient load balancing and sharding; spikes in traffic (for example: viral reels) can overload servers.
 - Testing Across Devices and OS Versions: Android/iOS fragmentation means extensive testing; memory leaks on low-end devices can crash the app.
-- Backward Compatibility: Updates must support old app versions; changing APIs can break third-party integrations.
 - Reliability Under Poor Network Conditions: In areas like Uganda, apps must handle intermittent connectivity with caching and offline modes.
+- Backward Compatibility: Updates must support old app versions; changing APIs can break third-party integrations.
+-  Security and Data Privacy: Protecting against hacks, leaks, and complying with global regs like GDPR; features like DMs need end-to-end encryption.
+
 
  ## Part E: Group Reflection
 
@@ -178,7 +175,7 @@ Here are 5 engineering challenges in maintaining or improving Instagram, with br
 - Allan Kagimu Ssebatta: Handled challenges, wrote Parts C and D.
 - Humphery Mubiru: Structured document, contributed to part C and D, edited for clarity.
 
-All members reviewed and approved the final content
+All members reviewed and approved the final content of this document.
 
 
 

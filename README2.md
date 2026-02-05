@@ -18,7 +18,7 @@ Consider a hospital management system developed without proper structure, naming
 
 ### *3. Explain why version control is important in team based software development*
 
-Version control systems like Git help teams collaborate safely by tracking changes and maintaining history. They allow multiple developers to work on different features simultaneously without overwriting each other’s work. If something breaks, teams can revert to a previous stable version. Version control also improves accountability through commits and makes collaboration structured using branches, pull requests, and merges.HEAD
+Version control systems like Git help teams collaborate safely by tracking changes and maintaining history. They allow multiple developers to work on different features simultaneously without overwriting each other’s work. If something breaks, teams can revert to a previous stable version. Version control also improves accountability through commits and makes collaboration structured using branches, pull requests, and merges.
 
 
 
